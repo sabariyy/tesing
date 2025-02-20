@@ -38,3 +38,21 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("active");
   }
 });
+
+document.getElementById('newsletterForm').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  // Simulate form submission (e.g., sending data to a server)
+  setTimeout(function () {
+    // Hide the form inputs and button
+   
+    document.querySelector('.btn-primary').style.display = 'none';
+
+    // Show the success message
+    document.getElementById('successMessage').style.display = 'block';
+  // Hide the success message after 5 seconds
+  setTimeout(function () {
+    document.getElementById('successMessage').style.display = 'none';
+  }, 5000); // 5000 milliseconds = 5 seconds
+}, 500); // Simulate a delay for form processing
+});

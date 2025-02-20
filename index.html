@@ -1476,12 +1476,21 @@
               Authoritatively morph 24/7 potentialities with error-free partnerships.
             </p>
 
-            <form action="" class="newsletter-form">
-              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
-
+            <form action="" class="newsletter-form" id="newsletterForm">
+              <input 
+                type="email" 
+                name="email" 
+                required 
+                placeholder="Email Address" 
+                class="newsletter-input"
+              >
               <button type="submit" class="btn btn-primary">Subscribe</button>
+              <!-- Success Message -->
+              
             </form>
-
+<p id="successMessage" class="success-message" style="display: none; color: green; margin-top: 10px;">
+                Thank you for subscribing! We'll keep you updated with the latest news and offers.
+              </p>
           </div>
 
         </div>
